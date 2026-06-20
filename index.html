@@ -3,141 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>mygames</title>
+
+<title>Мои Игры</title>
 
 <style>
+
 body{
+    margin:0;
+    background:#6b21a8;
     font-family:Arial,sans-serif;
-    max-width:900px;
-    margin:auto;
-    background:#f5f5f5;
-    padding:20px;
-}
-
-.header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    width:80px;
-    height:80px;
-    border-radius:50%;
-    object-fit:cover;
-    border:3px solid black;
 }
 
 h1{
-    margin:0;
+    text-align:center;
+    color:white;
+    padding:20px;
 }
 
-.game{
+.games{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
     background:white;
-    padding:12px;
-    margin:10px 0;
-    border-radius:10px;
-}
-
-.game a{
+    border-radius:20px;
+    overflow:hidden;
     text-decoration:none;
     color:black;
-    font-size:20px;
+    transition:0.2s;
 }
 
-.icon{
-    width:20px;
-    vertical-align:middle;
-    margin-right:8px;
+.card:hover{
+    transform:scale(1.03);
 }
+
+.card img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+}
+
+.name{
+    padding:12px;
+    text-align:center;
+    font-weight:bold;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="header">
-    <h1>Fuck School! We bypass It! mygames by nbepik</h1>
+<h1>Fuck School! We bypass It! mygames by nbepik</h1>
 
-    <img src="logo.png" class="logo">
-</div>
+<div class="games">
 
-<hr>
-
-<div class="game">
-<a target="_blank" href="https://spacewaves2.io">
-<img class="icon" src="https://www.google.com/s2/favicons?domain=spacewaves2.io">
-Space Waves
+<a class="card" href="https://spacewaves2.io" target="_blank">
+<img src="spacewaves.jpg">
+<div class="name">Space Waves</div>
 </a>
-</div>
 
-<div class="game">
-<a target="_blank" href="https://blockblast.game/">
-<img class="icon" src="https://www.google.com/s2/favicons?domain=blockblast.game">
-Block Blast
+<a class="card" href="https://blockblast.game/" target="_blank">
+<img src="blockblast.jpg">
+<div class="name">Block Blast</div>
 </a>
-</div>
 
-<div class="game">
-<a target="_blank" href="https://www.miniplay.com/game/aquapark-io">
-<img class="icon" src="https://www.google.com/s2/favicons?domain=miniplay.com">
-Aquapark.io
+<a class="card" href="https://www.miniplay.com/game/aquapark-io" target="_blank">
+<img src="aquapark.jpg">
+<div class="name">Aquapark.io</div>
 </a>
-</div>
 
-<div class="game">
-<a target="_blank" href="https://manrunner2048.io/">
-<img class="icon" src="https://www.google.com/s2/favicons?domain=manrunner2048.io">
-Runner 2048
+<a class="card" href="https://manrunner2048.io/" target="_blank">
+<img src="runner2048.jpg">
+<div class="name">Runner 2048</div>
 </a>
-</div>
 
-<div class="game">
-<a target="_blank" href="https://games.voodoo.io/paperio2">
-<img class="icon" src="https://www.google.com/s2/favicons?domain=voodoo.io">
-Paper.io 2
+<a class="card" href="https://games.voodoo.io/paperio2" target="_blank">
+<img src="paperio2.jpg">
+<div class="name">Paper.io 2</div>
 </a>
-</div>
 
-<div class="game">
-<a target="_blank" href="http://slither.com/io">
-<img class="icon" src="https://www.google.com/s2/favicons?domain=slither.com">
-Slither.io
+<a class="card" href="http://slither.com/io" target="_blank">
+<img src="slither.jpg">
+<div class="name">Slither.io</div>
 </a>
-</div>
 
-<div class="game">
-<a target="_blank" href="https://www.miniplay.com/game/noob-snake-2048">
-<img class="icon" src="https://www.google.com/s2/favicons?domain=miniplay.com">
-Noob Snake 2048
+<a class="card" href="https://www.miniplay.com/game/noob-snake-2048" target="_blank">
+<img src="noob2048.jpg">
+<div class="name">Noob Snake 2048</div>
 </a>
-</div>
 
-<div class="game">
-<a target="_blank" href="https://www.1001games.com/arcade/stack-fall">
-<img class="icon" src="https://www.google.com/s2/favicons?domain=1001games.com">
-Stack Fall
+<a class="card" href="https://www.1001games.com/arcade/stack-fall" target="_blank">
+<img src="stackfall.jpg">
+<div class="name">Stack Fall</div>
 </a>
-</div>
 
-<div class="game">
-<a target="_blank" href="https://www.worldguessr.com/de">
-<img class="icon" src="https://www.google.com/s2/favicons?domain=worldguessr.com">
-WorldGuessr
+<a class="card" href="https://www.worldguessr.com/de" target="_blank">
+<img src="worldguessr.jpg">
+<div class="name">WorldGuessr</div>
 </a>
-</div>
 
-<div class="game">
-<a target="_blank" href="https://geometry-games.io/dig-out-of-prison">
-<img class="icon" src="https://www.google.com/s2/favicons?domain=geometry-games.io">
-Dig Out Of Prison
+<a class="card" href="https://geometry-games.io/dig-out-of-prison" target="_blank">
+<img src="digout.jpg">
+<div class="name">Dig Out Of Prison</div>
 </a>
-</div>
 
-<div class="game">
-<a target="_blank" href="https://thiefpuzzle.io/">
-<img class="icon" src="https://www.google.com/s2/favicons?domain=thiefpuzzle.io">
-Thief Puzzle
+<a class="card" href="https://thiefpuzzle.io/" target="_blank">
+<img src="thiefpuzzle.jpg">
+<div class="name">Thief Puzzle</div>
 </a>
+
 </div>
 
 </body>
